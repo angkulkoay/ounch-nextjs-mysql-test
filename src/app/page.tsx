@@ -15,14 +15,6 @@ interface ConnectionTestResult {
   error?: any;
 }
 
-interface DbConfig {
-  host: string;
-  port: number;
-  user: string;
-  password: string;
-  database: string;
-}
-
 export default function Home() {
   const [items, setItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(true);
